@@ -128,7 +128,7 @@
 
 .searchbox {
     background-color: #fff;
-    background-image: url("/images/google_search.svg");
+    background-image: url("./images/google_search.svg");
     background-position: 15px 14px;
     background-size: 20px;
     background-repeat: no-repeat;
