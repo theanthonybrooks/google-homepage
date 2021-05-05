@@ -47,12 +47,26 @@
     padding: 4px;
     padding-right: 15px;
 }
+
+.nav-account {
+    background-size: 32px 32px;
+    border-radiu: 50px;
+    display: block;
+    margin: 0;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+    padding: 4px;
+    padding-right: 15px;
+}
 .mainlogo {
     height: 92px;
     aspect-ratio: auto 272 / 92;
     object-fit: contain;
     object-position: center bottom;
     width: auto;
+    margin-top: auto;
 }
 
 .logo-container {
@@ -64,6 +78,7 @@
     height: calc(100% - 560px);
     flex-shrink: 0;
     box-sizing: border-box;
+    margin-top: 200px;
 }
 
 .search-area {
@@ -75,7 +90,10 @@
 }
 
 .searchbox {
-    background: #fff;
+    background-color: #fff;
+    background-image: url("/images/google_search.svg");
+    background-position: 15px 12px;
+    background-repeat: no-repeat;
     display: flex;
     border: 1px solid #dfe1e5;
     box-shadow: none;
@@ -84,4 +102,43 @@
     height: 44px;
     margin: 0 auto;
     width: 584px;
+    padding-left: 50px;
+}
+
+.searchbox:hover{
+    background-color: #fff; 
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.searchbox:focus-visible{
+    outline: none;
+}
+
+.search-buttons {
+    height: 70px;
+    padding-top: 18px;
+    top: 53px;
+    display: flex;
+    margin: 0 auto;
+    text-align: -webkit-center;
+    justify-content: center;
+
+}
+
+.search-button-ind {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
