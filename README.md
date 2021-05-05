@@ -1,0 +1,1 @@
+This is basically just a demo recreation of Google's search results page in order to demonstrate various HTML and CSS techniques and theories. Nothing too complex, just some flexbox and various classes/anchors/tags. I don't think I'll be recreating any pagination at this point as that's overkill.
