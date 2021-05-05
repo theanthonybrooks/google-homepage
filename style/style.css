@@ -1,7 +1,30 @@
+body {
+    height: 100%;
+}
+
 .nav-bar {
-    min-width: auto;
+    width: 80%;
     height: 48px;
-    display: block;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 10px;
+}
+.nav-bar.columnL{
+    padding: 10px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: flex-start;
+    margin-left: 12px;
+}
+.nav-bar.columnR{
+   
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: -8px;
+
 }
 
 .nav-links {
@@ -9,9 +32,6 @@
     box-sizing: border-box;
     height: 48px;
     line-height: normal;
-    
-    flex: 0 0 auto;
-    justify-content: flex-end;
     vertical-align: middle;
     white-space: nowrap;
     -webkit-box-align: center;
@@ -27,7 +47,26 @@
     text-decoration: none;
     font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
     padding-right: 15px;
+    padding-top: 4px;
 }
+
+.nav-linkL {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    font: 14px/27px Roboto, RobotoDraft, Arial, sans-serif;
+    padding-right: 25px;
+    padding-top: 4px;
+    margin-left: -5px;
+    
+}
+
+.nav-linkL:hover {
+    text-decoration: underline;
+}
+
 
 .nav-text {
     font-family: arial, sans-serif;
@@ -35,30 +74,44 @@
     
 }
 
+.nav-link-ind:hover {
+    text-decoration: underline;
+}
+
 .nav-images {
     background-size: 32px 32px;
-    border-radiu: 50px;
+    border-radius: 50%;
+    border: 3px solid transparent;
     display: block;
-    margin: 0;
+    margin: 0 10px 0 5px;
     position: relative;
-    height: 24px;
+    height: 22px;
     width: 24px;
     z-index: 0;
     padding: 4px;
-    padding-right: 15px;
+
+}
+
+.nav-images:hover {
+    background-color: rgba(60,64,67,0.08);
+    border: 3px solid rgba(60,64,67,0.08);
 }
 
 .nav-account {
     background-size: 32px 32px;
-    border-radiu: 50px;
+    border-radius: 50%;
     display: block;
-    margin: 0;
     position: relative;
     height: 32px;
     width: 32px;
     z-index: 0;
     padding: 4px;
-    padding-right: 15px;
+    margin-top: -3px;
+    margin-right: 15px;
+}
+
+.nav-account:hover {
+    background-color: rgba(60,64,67,0.08);
 }
 .mainlogo {
     height: 92px;
@@ -78,7 +131,7 @@
     height: calc(100% - 560px);
     flex-shrink: 0;
     box-sizing: border-box;
-    margin-top: 200px;
+    margin-top: 5%;
 }
 
 .search-area {
@@ -92,7 +145,8 @@
 .searchbox {
     background-color: #fff;
     background-image: url("/images/google_search.svg");
-    background-position: 15px 12px;
+    background-position: 15px 14px;
+    background-size: 20px;
     background-repeat: no-repeat;
     display: flex;
     border: 1px solid #dfe1e5;
@@ -141,4 +195,81 @@
     text-align: center;
     cursor: pointer;
     user-select: none;
+}
+
+.search-button-ind:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.bottom {
+    display: flex;
+}
+
+.underSearch {
+display: flex;
+font: small Arial, sans-serif;
+text-decoration: none;
+color: #1a0dab;
+justify-content: center;
+margin-bottom: 32px;
+flex-grow: 1;
+;}
+
+footer {
+    background: #f2f2f2;
+     justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+
+}
+.flexbottom {
+    display: flex;
+    width: 100%;
+   
+}
+
+footer .footernavL {
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 0;
+    display: flex;
+}
+
+footer .footernav {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+footer .footernavR {
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 2;
+    display: flex;
+    
+}
+
+footer .nav-bottom {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    font: 14px/27px Roboto, RobotoDraft, Arial, sans-serif;
+    text-decoration: none;
+    color: #70757a;
+}
+
+footer .nav-bottom:hover {
+    text-decoration: underline;
 }
